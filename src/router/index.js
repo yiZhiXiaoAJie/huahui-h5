@@ -3,11 +3,11 @@
  * @Github: https://github.com/GitHubGanKai
  * @Author: GitHubGanKai
  * @Date: 2020-12-27 20:10:38
- * @LastEditors: gankai
- * @LastEditTime: 2021-01-03 15:53:33
+ * @LastEditors: 马世洁 mashijiezuishuai@outlook.com
+ * @LastEditTime: 2025-05-16 18:23:22
  * @FilePath: /vue-jd-h5/src/router/index.js
  */
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory  } from 'vue-router'
 
 const indexRouter = {
   path: '/',
@@ -43,6 +43,6 @@ routerContext.keys().forEach(route => {
 })
 
 export default createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory (process.env.BASE_URL),
   routes
 })
